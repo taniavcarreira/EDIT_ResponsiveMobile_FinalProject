@@ -1,94 +1,106 @@
-        .animation {
-            -webkit-transition: all 0.3s ease 0.3s;
-            -moz-transition: all 0.3s ease 0.3s;
-            -o-transition: all 0.3s ease 0.3s;
-            transition: all 0.3s ease 0.3s;
-        }
-        
-        .imgfit {
-            display: block;
-            width: 100%;
-            height: auto;
-            img,
-            source {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
-        }
-        
-        .container {
-            display: block;
-            position: relative;
-            padding: $gridgutter*2 0;
-            @media (min-width: $desktop) {
-                padding: $gridgutter*2 0;
-            }
-            &.header-margin-top {
-                margin-top: $h-header;
-            }
-            &.header-smaller {
-                margin-top: $h-header-sm;
-            }
-            &.totalvh {
-                min-height: calc(100vh - #{$h-footer + $h-header + 80});
-            }
-        }
-        
-        .is-uppercase {
-            text-transform: uppercase;
-        }
-        
-        .is-normal {
-            font-weight: $normal;
-        }
-        
-        .is-bold {
-            font-weight: $bold;
-        }
-        
-        .is-right {
-            text-align: right;
-        }
-        
-        .is-relative {
-            position: relative;
-        }
-        
-        .is-underline {
-            text-decoration: underline;
-        }
-        
-        .is-h2 {
-            @extend h2;
-        }
-        
-        .sr-only {
-            display: none;
-            border: 0 !important;
-            clip: rect(1px, 1px, 1px, 1px) !important;
-            /* 1 */
-            -webkit-clip-path: inset(50%) !important;
-            clip-path: inset(50%) !important;
-            /* 2 */
-            height: 1px !important;
-            margin: -1px !important;
-            overflow: hidden !important;
-            padding: 0 !important;
-            position: absolute !important;
-            width: 1px !important;
-            white-space: nowrap !important;
-            /* 3 */
-        }
-        
-        .sr-only-focusable:focus,
-        .sr-only-focusable:active {
-            clip: auto !important;
-            -webkit-clip-path: none !important;
-            clip-path: none !important;
-            height: auto !important;
-            margin: auto !important;
-            overflow: visible !important;
-            width: auto !important;
-            white-space: normal !important;
-        }
+.animation {
+    -webkit-transition: all 0.3s ease 0.3s;
+    -moz-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    transition: all 0.3s ease 0.3s;
+}
+
+.imgfit {
+    display: block;
+    width: 100%;
+    height: auto;
+    img,
+    source {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding: $gridgutter*2 0;
+    @media (min-width: $desktop) {
+        padding: $gridgutter*2 0;
+    }
+    &.header-margin-top {
+        margin-top: $h-header;
+    }
+    &.header-smaller {
+        margin-top: $h-header-sm;
+    }
+    &.totalvh {
+        min-height: calc(100vh - #{$h-footer + $h-header + 80});
+    }
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.is-normal {
+    font-weight: $normal;
+}
+
+.is-bold {
+    font-weight: $bold;
+}
+
+.is-right {
+    text-align: right;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.is-underline {
+    text-decoration: underline;
+}
+
+.is-h2 {
+    @extend h2;
+}
+
+.sr-only {
+    display: none;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    /* 1 */
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+    /* 3 */
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+    clip: auto !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    height: auto !important;
+    margin: auto !important;
+    overflow: visible !important;
+    width: auto !important;
+    white-space: normal !important;
+}
+
+
+/* OTHER USEFULL STUFF xD 
+
+#kim-kardashian{padding-bottom:9999999px}
+#ikea{display:table;}
+#lego{display:block;}
+#mario-mushroom{transform:scale(200%);}
+#rap-artists{word-spacing:0}
+#push-up-bra{margin-top:-25%; overflow:visible;}
+
+HAVE FUN! SEE YOU SOON */
