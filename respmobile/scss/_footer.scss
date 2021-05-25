@@ -1,0 +1,17 @@
+.footer {
+    height: 84px;
+    background: rgba($color: $graydark, $alpha: 0.6);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.5px;
+    @media (min-width: $desktop) {
+        padding: 0 $gridgutter*2;
+    }
+    >p:last-child {
+        letter-spacing: 1.5px;
+        text-align: right;
+    }
+}
